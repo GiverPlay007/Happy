@@ -7,31 +7,47 @@
 <html lang="pt_BR">
   <head>
     <title> Happy </title>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+    
     <link rel="icon" href="./public/images/logo-icon.png">
+
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/animations.css">
+    <link rel="stylesheet" href="./public/css/page-landing.css">
   </head>
 
-  <body>
-    <header>
-      <img src="./public/images/logo.svg" alt="Logomarca da aplicação Happy">
-
-      <div>
-        <strong> Rio do Sul </strong>
-        <p> Santa Catarina </p>
-      </div>
-    </header>
+  <body id="body">
+    <div id="page-landing">
+      <div id="container">
+        <header id="happy-header">
+          <img 
+            class="animate-up"
+            id="logo" 
+            src="./public/images/logo.svg" 
+            alt="Logomarca da aplicação Happy">
     
-    <main>
-      <h1> Leve felicidade para o mundo </h1>
-      
-      <section>
-        <p> Visite um orfanato e mude o dia de muitas crianças </p>
-
-        <a href="#" title="Visite orfanatos">
-          <img src="./public/images/arrow.svg" alt="Ir para o mapa">
-        </a>
-      </section>
-    </main>
+          <div class="location animate-up">
+            <strong> Rio do Sul </strong>
+            <p> Santa Catarina </p>
+          </div>
+        </header>
+        
+        <main>
+          <h1 class="animate-up"> Leve felicidade para o mundo </h1>
+          
+          <section class="visit">
+            <p class="animate-up"> Visite um orfanato e mude o dia de muitas crianças </p>
+    
+            <a class="animate-up" href="#" title="Visite orfanatos">
+              <img src="./public/images/arrow.svg" alt="Ir para o mapa">
+            </a>
+          </section>
+        </main>
+      </div>
+    </div>
   </body>
 </html>
