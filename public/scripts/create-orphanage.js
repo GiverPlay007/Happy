@@ -20,6 +20,9 @@ map.on('click', (event) => {
   let lat = event.latlng.lat;
   let lng = event.latlng.lng;
 
+  document.querySelector('[name=lat]').value = lat;
+  document.querySelector('[name=lng]').value = lng;
+
   // marker && map.removeLayer(marker);
   if(marker) marker.removeFrom(map);
 
@@ -27,3 +30,34 @@ map.on('click', (event) => {
             .addTo(map);
 
 });
+
+function addPhotoField()
+{
+  let container = document.querySelector("#images");
+  let fieldsContainer = document.querySelectorAll('.new-upload');
+  let newFieldContainer = fieldsContainer[fieldsContainer.length - 1].cloneNode(true);
+
+  let input = newFieldContainer.children[0];
+
+  if(input.value == "")
+  {
+    return;
+  }
+
+  input.value = "";
+  container.appendChild(newFieldContainer);
+}
+
+function deletePhotoField(event)
+{
+  let span = event.currentTarget;
+  let fieldsContainer = document.querySelectorAll('.new-upload');
+
+  if(fieldsContainer.length < 2)
+  {
+    span.parentNode.children[0].value = "";
+    return;
+  }
+
+  span.parentNode.remove();
+}
