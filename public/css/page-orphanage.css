@@ -122,30 +122,3 @@ main {
   border-radius: 20px;
   color: #37C77F;
 }
-
-.primary-button {
-  margin-top: 6.4rem;
-  width: 100%;
-  height: 6.4rem;
-
-  border: none;
-  border-radius: 2rem;
-
-  background: #3CDC8C;
-  color:white;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transition: background-color 200ms;
-}
-
-.primary-button:hover{
-  background: #36CF82;
-}
-
-.primary-button img {
-  margin-right: 1.6rem;
-}

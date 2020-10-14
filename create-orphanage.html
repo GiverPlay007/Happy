@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./public/css/sidebar.css">
     <link rel="stylesheet" href="./public/css/map.css">
     <link rel="stylesheet" href="./public/css/form.css">
+    <link rel="stylesheet" href="./public/css/buttons.css">
     <link rel="stylesheet" href="./public/css/page-create-orphanage.css">
   </head>
 
@@ -54,22 +55,63 @@
 
             <div class="input-block">
               <label for="name"> Nome </label>
-              <input id="name" name="name">
+              <input id="name" name="name" required>
             </div>
 
             <div class="input-block">
               <label for="about"> Sobre <span> Máximo 300 caracteres </span> </label>
-              <textarea name="about" id="about"></textarea>
+              <textarea name="about" id="about" required></textarea>
             </div>
 
             <div class="input-block">
               <label for="whatsapp"> Número de WhatsApp </label>
-              <input id="whatsapp" name="whatsapp">
+              <input id="whatsapp" name="whatsapp" required>
+            </div>
+
+            <div class="input-block images">
+              <label for="images"> Fotos </label>
+
+              <div class="images-upload" id="images">
+
+                <div class="new-upload">
+                  <input name="images" placeholder="Cole o link da foto aqui" required>
+                  <span>
+                    <img src="./public/images/remove-file.svg" alt="Remover foto">
+                  </span>
+                </div>
+              </div>
+
+              <button type="button">
+                <img src="./public/images/add-file.svg" alt="Adicionar mais um campo">
+              </button>
             </div>
           </fieldset>
 
           <fieldset>
             <legend> Visitação </legend>
+
+            <div class="input-block">
+              <label for="instructions"> Instruções </label>
+              <textarea name="instructions" id="instructions" required></textarea>
+            </div>
+
+            <div class="input-block">
+              <label for="opening_hours"> Horário de visitas </label>
+              <input id="opening_hours" name="opening_hours" required>
+            </div>
+
+            <div class="input-block">
+              <label for="open_on_weekends"> Atende fim de semana? </label>
+              <input type="hidden" id="open_on_weekends" name="open_weekends" value="1" required>
+              
+              <div class="button-select">
+                <button type="button" class="active"> Sim </button>
+                <button type="button"> Não </button>
+              </div>
+
+              <button type="submit" class="primary-button"> Confirmar </button>
+
+            </div>
           </fieldset>
 
         </form>
