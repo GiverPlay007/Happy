@@ -61,3 +61,14 @@ function deletePhotoField(event)
 
   span.parentNode.remove();
 }
+
+function switchButtonState(event)
+{
+  document.querySelectorAll('.button-select button').forEach((e) => e.classList.remove('active'));
+
+  let button = event.currentTarget;
+  button.classList.add('active');
+
+  let input = document.querySelector('[name="open_on_weekends"]');
+  input.value = button.dataset.value;
+}
