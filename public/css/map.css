@@ -1,0 +1,31 @@
+/*
+  Next Level Week #3
+  Map
+*/
+
+.map-container {
+  margin-top: 6.4rem;
+  background: #e6f7fb;
+  border: 1px solid #B3DAE2;
+  border-radius: 2rem;
+}
+
+#mapid {
+  width: 100%;
+  height: 28rem;
+}
+
+.map-container footer {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.map-container footer a {
+  color: #0089a5;
+  text-decoration: none;
+}
+
+.map-container .leaflet-container {
+  border-bottom: 1px solid #DDE3F0;
+  border-radius: 2rem;
+}

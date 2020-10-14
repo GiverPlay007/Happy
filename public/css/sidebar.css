@@ -1,0 +1,39 @@
+/*
+  Next Level Week #3
+  Sidebar
+*/
+
+aside.sidebar {
+  position: fixed;
+  height: 100%;
+  padding: 32px, 24px;
+  background: #15C3D6;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside.sidebar footer button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 1.6rem;
+  background: #12AFCB;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 200ms;
+}
+
+aside.sidebar footer button:hover {
+  background: #17B6EB;
+}
+
+.with-sidebar {
+  padding-left: 110px;
+}

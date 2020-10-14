@@ -9,14 +9,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
 body {
   height: 100vh;
   color: white;
   background: #EBF2F5;
-}
-
-:root {
-  font-size: 62.5%;
 }
 
 body, input, button, textarea {
