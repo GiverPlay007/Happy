@@ -6,13 +6,13 @@
 aside.sidebar {
   position: fixed;
   height: 100%;
-  padding: 32px, 24px;
+  padding: 32px 24px;
   background: #15C3D6;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 aside.sidebar footer button {

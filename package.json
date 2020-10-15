@@ -1,0 +1,25 @@
+{
+  "name": "Happy",
+  "version": "1.0.0",
+  "description": "Next Level Week #3",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiverPlay007/Happy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiverPlay007/Happy/issues"
+  },
+  "homepage": "https://github.com/GiverPlay007/Happy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "nodemon": "^2.0.5"
+  }
+}
