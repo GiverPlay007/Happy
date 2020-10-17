@@ -6,6 +6,7 @@ const server = express();
 
 server
   .use(express.static('public'))
+  .use(express.urlencoded({ extended: true }))
 
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'hbs')
@@ -14,6 +15,8 @@ server
   .get('/orphanages', pages.orphanages)
   .get('/orphanage', pages.orphanage)
   .get('/create-orphanage', pages.createOrphanage)
+
+  .post('/save-orphanage', pages.saveOrphanage)
 
 server.listen(80);
 console.log('Estou online!');

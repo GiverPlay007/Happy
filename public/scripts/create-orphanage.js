@@ -31,6 +31,31 @@ map.on('click', (event) => {
 
 });
 
+function validate(event)
+{
+  if(document.querySelector('[name=lat]').value == '' || document.querySelector('[name=lng]').value == '')
+  {
+    event.preventDefault();
+    alert('Selecione um local no mapa!');
+    return;
+  }
+
+  let valid = false;
+
+  document.querySelectorAll('.button-select button').forEach((e) => {
+    if(e.classList.contains('active'))
+    {
+      valid = true;
+    }
+  });
+  
+  if(!valid)
+  {
+    event.preventDefault();
+    alert('É necessário dizer se o orfanato atende em finais de semana.')
+  }
+}
+
 function addPhotoField()
 {
   let container = document.querySelector("#images");
