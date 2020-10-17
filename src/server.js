@@ -15,6 +15,5 @@ server
   .get('/orphanage', pages.orphanage)
   .get('/create-orphanage', pages.createOrphanage)
 
-
 server.listen(80);
 console.log('Estou online!');

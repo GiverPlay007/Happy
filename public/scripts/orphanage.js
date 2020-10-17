@@ -12,9 +12,7 @@
   zoomControl: false
  }
 
-const map = L.map('mapid', options).setView([-27.2166991, -49.6471861], 15);
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+const map = L.map('mapid', options);
 
 const icon = L.icon({
   iconUrl: '/images/map-marker.svg',
@@ -23,10 +21,20 @@ const icon = L.icon({
   popupAnchor: [170, 2]
 });
 
-L.marker([-27.2166991, -49.6471861], { icon })
-  .addTo(map);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-  // Images
+mark();
+
+// Functions
+
+function mark()
+{
+  const lat = document.querySelector('span[data-lat]').dataset.lat;
+  const lng = document.querySelector('span[data-lat]').dataset.lng;
+
+  map.setView([lat, lng], 15);
+  L.marker([lat, lng], { icon }).addTo(map);
+}
 
 function selectImage(event)
 {
