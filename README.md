@@ -1,6 +1,6 @@
 # Happy
 
-Projeto desenvolvido na terceira edição do evento [NextLevelWeek](https://nextlevelweek.com/), trilha Discovery.
+Projeto desenvolvido na terceira edição do evento [NextLevelWeek](https://nextlevelweek.com/), trilha Discover.
 
 ## :globe_with_meridians: Tecnologias
 
